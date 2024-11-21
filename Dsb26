@@ -1,0 +1,29 @@
+PROGRAM:
+
+.mmregs
+
+.text
+
+START:
+
+STM #0140H, STO
+
+STM #40H,PMST
+
+STM #0A000H, ARO
+
+ST #1H,*ARO
+
+LD *AR0+,T
+
+ST #2H,*ARO
+
+MPY *AR(+,A
+
+STL A,*ARO
+
+HLT: B HLT
+
+.END
+
+VECURI
